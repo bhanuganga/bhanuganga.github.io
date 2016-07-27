@@ -1,0 +1,100 @@
+<!doctype HTML >
+<html lan="en">
+<head>
+<title>First HTML Assess</title>
+
+<link rel="stylesheet" href="file:///home/cfit/html/style.css"/>
+
+<script type='text/javascript' src="file:///home/cfit/html/scripts.js"></script>
+
+</head>
+
+<body style="background-color:lightgrey; color:red">
+<div id="nav">
+<strong style="color:magenta;text-align:center;">Tag list</strong><br>
+<a href="#banner">heading</a><br>
+<a href="#para">paragraph</a><br>
+<a href="#image">images</a><br>
+<a href="#pretg">pre</a><br>
+<a href="#span">span</a><br>
+<a href="#format">format</a><br>
+<a href="#quote">quote</a><br>
+<a href="#cit">cite</a><br>
+<a href=#code>coding</a><br>
+<a href=#imgaslnk>image as link</a><br>
+<a href=#ifrm>iframe</a><br>
+<a href=#myImage>imgswitch.js </a><br>
+<a href="#tab">table</a><br>
+<a href="#form">form </a><br>
+</div>
+
+<div id="banner">
+<h1 class="headingtest">This is </h1><h2 class="headingtest">heading </h2><h3 class="headingtest">in </h3><h4 class="headingtest">inline </h4><h5 class="headingtest">using </h5><h6 class="headingtest">diplay:inline</h6></div>
+
+<h3 >Paragraph</h3>
+<p id="para" title="this is random text">Remember outweigh do he desirous no cheerful. PARAGARAPH TEXT Do of doors water ye guest. We if prosperous comparison middletons at. Park we in lose like at no. An so to preferred convinced distrusts he determine. In musical me my placing clothes comfort pleased hearing. </p>
+<a href="http://www.facebook.com" target="_blank" style="text-decoration:none" title="anchor tag" >Clicking this takes to facebook in new tab(no underline)</a><hr>
+
+<img id="image" src="file:///home/cfit/Downloads/UluruPhoto.png" height='104px' width='104' alt="image from the local disk" title="image from the local disk">
+<pre id='pretg'> This 
+	is     a 
+   preformated   text
+</pre>
+<div style="font-size:15px;font-family:courier;text-align:center">This is an <span id=span style="color:blue">example of span,</span> center-align,font,font size</div><hr>
+<div id=format>
+<b>bold </b><i>italic </i><em>emphasized </em><small>small </small>  sub<sub>script </sub>   super<sup>script </sup><ins>inserted  </ins><del>deleted text</del>
+<mark>marked text</mark></div><hr>
+
+<div id=quote><q>Single quote</q>
+<blockquote>A text file (sometimes spelled "textfile": an old alternative name is "flatfile")<U> BLOCKQUOTE</U>  is a kind of computer file that is structured as a sequence of lines of electronic text. A text file exists within a computer file system.</blockquote>
+</div><br>
+citation example: <cite id=cit>I'm in customfurnish.com</cite> ####### <bdo dir=rtl> This is a bi-directional override example</bdo><hr>
+<pre><code id=code>
+import sys
+
+def main(filename):
+    f=open(filename, mode = 'at+', encoding = 'utf-8')
+    for line in f:
+        sys.stdout.write(line)
+        f.writelines(['ganga \n','bhanu'])
+    f.close()
+
+if __name__=='__main__':
+    main(sys.argv[1])
+</code></pre> <hr>
+
+<u>Click this image to load watchdogs website in beside iframe</u><br>
+<a id=imgaslnk href="http://watchdogs.ubisoft.com/watchdogs/en-gb/home/" target=iframe1>
+<img src="file:///home/cfit/Downloads/wd2.jpg" width=500 height=351 style="padding:10px"></a>
+<iframe id=ifrm style="padding:10px" src=https://www.ubisoft.com/en-GB/ name=iframe1 width=650 height=349></iframe>
+<hr>
+
+
+
+<img id='myImage' src="file:///home/cfit/Downloads/wdlogo.jpg" width=70 height=50>
+<p>
+<button type=button onClick="picswitch(1)" >img1</button>
+<button type=button onClick="picswitch(0)" >img2</button>
+</p>
+<hr>
+
+<table id=tab>
+<caption style=text-align:center>Demo table</caption>
+<tr>
+  <th>Name</th>
+  <th>Age</th>
+  </tr>
+<tr>
+ <td>Adarsh</td>
+ <td>30</td>
+</tr>
+<tr>
+ <td>Bhanu</td>
+ <td>25</td>
+</tr>
+</table><br>
+<hr>
+<footer>
+<center><a href="file:////home/cfit/html/register.html" target=_blank"> Click here to fill the registration form</a></center></footer>
+</body>
+</html>
