@@ -1,0 +1,52 @@
+<!doctype html>
+<head>
+<link rel="stylesheet" href="file:///home/cfit/html/style.css"/>
+<script type='text/javascript' src="file:///home/cfit/html/scripts.js"></script>
+<style>
+ fieldset{
+ background-image:url("wdlogo.jpg");background-repeat:no-repeat;background-color:white;color:black;width:45%;padding-top:25px;background-position: left bottom;
+}
+
+
+</style>
+</head>
+
+
+<body>
+
+<center>
+<fieldset >
+<form id='form' name='form1' >
+Username:<input type="text" id='usn' placeholder='name' pattern="[a-zA-z]{3}"><br><br>
+Password: <input type='password' id='pwd' placeholder='password' pattern="[a-zA-z0-9]"><br><br>
+Email:<input id='ema' type="email"><br><br>
+
+City:<select name="city" >
+<option value="Hyderabad" selected>Hyd</option>
+<option value="Banglore">Bangl</option>
+<option value="pune">Pune</option>
+<option value="Mumbai">Mumbai</option>
+</select> <input type=file id=fil ><br>
+Gender:<input type="radio" name="gender" value="male">male<input type="radio" name="gender" value="female">female
+<br>
+ 
+<ul type="none">
+<li><input type="checkbox" value="product1">Prod1</li>
+<li><input type="checkbox" value="product2">Prod2</li>
+<li><input type="checkbox" value="product3">Prod3</li>
+</ul>
+<br><br><input  type='button' value='Submit' style="width:10%" onClick=myFunc() ><br>
+
+
+</fieldset>
+
+</form><br><br>
+<div id=p1 >
+This will change</div><br>
+<div id=p2 >
+This will also change
+</div><br>
+<img id='p3' src="" alt="wdlogo" />
+</center>
+</body>
+</html>
